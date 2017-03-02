@@ -1,0 +1,39 @@
+{
+  "name": "jest-matchers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:djforth/jest-matchers.git",
+  "author": "Adrian Stainforth <adrian.stainforth@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "immutable": ">=3.8.0 < 4",
+    "jest": ">=19.0.0 < 20",
+    "lodash": ">=4.17.4 <5",
+    "moment": ">=2.17.0 <3"
+  },
+  "devDependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-rewire": "^1.0.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2016": "^6.22.0",
+    "babel-preset-es2017": "^6.22.0",
+    "eslint": "^3.16.1",
+    "eslint-config-morsedigital-jest": "^1.0.1",
+    "immutable": "^3.8.1",
+    "jest": "^19.0.2",
+    "jest-babel": "^1.0.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.17.1"
+  },
+  "dependencies": {
+    "jasmine-expect": ">=3.6.0"
+  },
+  "scripts": {
+    "build": "babel src -x '.js' -d lib",
+    "build:watch": "babel src -x '.js' -w --source-maps  -d lib",
+    "lint": "eslint src/** --fix",
+    "lint:tests": "eslint __tests__/** --fix",
+    "test": "jest --coverage --config jestConfig.json",
+    "test:watch": "jest --watch --config jestConfig.json"
+  }
+}

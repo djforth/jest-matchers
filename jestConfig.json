@@ -1,0 +1,24 @@
+{
+  "browser": true,
+  "collectCoverageFrom": ["<rootDir>/src/**/*.{js,jsx}"],
+  "coveragePathIgnorePatterns": ["<rootDir>/node_modules/", "<rootDir>/__tests__/", "<rootDir>/__tests__/__helpers__"],
+  "roots": [
+    "<rootDir>/__tests__/",
+    "<rootDir>/src/"
+  ],
+  "modulePaths": [
+    "<rootDir>/src/"
+  ],
+  "modulePathIgnorePatterns": [
+    "<rootDir>/lib/",
+    "<rootDir>/node_modules/"
+  ],
+  "setupTestFrameworkScriptFile": "./src",
+  "testPathIgnorePatterns": [
+    "<rootDir>/__tests__/__dummy__",
+    "<rootDir>/lib",
+    "<rootDir>/node_modules",
+    "<rootDir>/bower_components"
+  ],
+  "verbose": true
+}
