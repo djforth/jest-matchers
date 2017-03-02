@@ -5,6 +5,12 @@
     "es2017"
   ],
   "plugins": [
+    [
+      "lodash-modularize",
+      {
+          "lodashVersion": "4.17.4"
+      }
+    ],
     "add-module-exports"
   ],
   "env": {

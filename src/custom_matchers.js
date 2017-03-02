@@ -33,6 +33,5 @@ export default ()=>{
             , succ: 'The immutable object has the key :expected'
           })
     });
-
 };
 
