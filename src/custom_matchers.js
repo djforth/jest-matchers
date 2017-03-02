@@ -1,5 +1,5 @@
 import toBeMatcher from './to_be_matchers';
-import CreateMatcher from './create_matcher';
+import CreateMatcher from './helper/create_matcher';
 
 import {isArray} from 'lodash';
 
@@ -32,14 +32,7 @@ export default ()=>{
             fail: 'The immutable object :actual has the key :expected'
             , succ: 'The immutable object has the key :expected'
           })
-
-
-    , hasArrayLength: CreateMatcher(
-        (actual, expected)=>actual.length === expected
-        , {
-          fail: 'The arrays length isn\'t :expected it\'s :actual'
-          , succ: 'The arrays length is :expected'
-        })
     });
+
 };
 

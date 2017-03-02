@@ -4,8 +4,8 @@ const convertExpected = (expected)=>{
   let type = typeof expected;
   if (type === 'string'|| type === 'number') return expected;
 
-  if (expect.and){
-    return `spy called`;
+  if (expect.mock){
+    return 'spy called';
   }
 
   if (Map.isMap(expected) || List.isList(expected)){
@@ -33,7 +33,7 @@ export default (check, {succ, fail})=>{
   return (actual, expected)=>{
     if (expected === undefined){
       expected = '';
-    };
+    }
     let result = {};
     result.pass = check(actual, expected);
     if (result.pass){
