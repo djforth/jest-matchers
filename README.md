@@ -1,5 +1,7 @@
 # jest-matchers
 
+[![Build Status](https://semaphoreci.com/api/v1/djforth/jest-matchers/branches/master/badge.svg)](https://semaphoreci.com/djforth/jest-matchers)
+
 Custom matcher for testing jest
 
 ## Install
