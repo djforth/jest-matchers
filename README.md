@@ -1,5 +1,7 @@
 # jest-matchers
 
+Custom matcher for testing jest
+
 ## Install
 
 ```bash
