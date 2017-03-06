@@ -1,4 +1,5 @@
 import {Map, List} from 'immutable';
+import moment from 'moment';
 
 const convertExpected = (expected)=>{
   let type = typeof expected;
@@ -10,6 +11,10 @@ const convertExpected = (expected)=>{
 
   if (Map.isMap(expected) || List.isList(expected)){
     expected = expected.toJS();
+  }
+
+  if (moment.isMoment(expected)){
+    return expected.toJSON()
   }
 
   return JSON.stringify(expected);
