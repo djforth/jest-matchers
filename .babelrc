@@ -13,6 +13,7 @@
               "lodashVersion": "4.17.4"
           }
         ]
+        , 'add-module-exports'
       ]
     },
     "test": {
