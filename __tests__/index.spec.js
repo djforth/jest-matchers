@@ -13,22 +13,22 @@ describe('Matchers', function(){
     });
   });
 
-  // describe('toBeDeeplyEqual', ()=>{
-  //   let obj;
-  //   beforeAll(()=>{
-  //     obj = {level1: {level2: {level3: 'foo'}}}
-  //   })
+  describe('matchObject', ()=>{
+    let obj;
+    beforeAll(()=>{
+      obj = {level1: {level2: {level3: 'foo'}}}
+    })
 
-  //   test('is Deeply Equal', function(){
-  //     expect(obj).toBeDeeplyEqual(obj);
-  //   });
+    test('is Deeply Equal', function(){
+      expect(obj).matchObject(obj);
+    });
 
-  //   test('is not Deeply Equal', function(){
-  //     let expected = {level1: {level2: {level3: 'Foo'}}}
-  //     expect(obj).toEqual(expected)
-  //     expect(obj).not.toBeDeeplyEqual(expected);
-  //   });
-  // });
+    test('is not Deeply Equal', function(){
+      let expected = {level1: {level2: {level3: 'Foo'}}}
+      // expect(obj).toEqual(expected)
+      expect(obj).not.matchObject(expected);
+    });
+  });
 
   describe('toBeMoment', function(){
     test('Is moment', function(){
@@ -98,6 +98,8 @@ describe('Matchers', function(){
     test('objects doesn\'t have key', function(){
       expect(item).not.hasKey('bar');
     });
+
+
   });
 
   describe('hasImmutableKey', function(){

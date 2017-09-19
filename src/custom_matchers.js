@@ -60,6 +60,16 @@ export default ()=>{
             fail: 'The immutable object :actual has the key :expected'
             , succ: 'The immutable object has the key :expected'
           })
+      , matchObject: CreateMatcher(
+          (actual, expected)=>{
+            if (!isPlainObject(actual)) return false;
+
+            return deeplyEqual(actual, expected);
+          }
+          , {
+            fail: 'Object :actual isn\'t deeply equal :expected'
+            , succ: 'Object :actual is deeply equal :expected'
+          })
     });
 };
 
