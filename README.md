@@ -49,6 +49,15 @@ toBeSameOrAfter | `expect(moment('28-01-2013')).toBeSameOrAfter(moment('28-01-20
 toBeSameOrBefore | `expect(moment('28-01-2013')).toBeSameOrBefore(moment('28-01-2013'));`
 toBeBetween | `expect(moment('28-01-2013')).toBeBetween({start: moment('27-01-2013'), finish: moment('29-01-2013')}));`
 
+## Element matchers
+
+Matcher | Example
+:-------|:-------
+toBeElement | `expect(document.createElement('div')).toBeElement();`
+toHaveAttribute | `expect(document.createElement('div')).toHaveAttribute('aria-hidden', 'false');`
+toHaveTextContent | `expect(document.createElement('div')).toHaveTextContent('Some text');`
+toHaveCssClass | `expect(document.createElement('div')).toHaveCssClass('some-class');`
+
 ## Other Matchers
 
 Matcher | Example
