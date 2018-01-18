@@ -1,7 +1,18 @@
 import moment from 'moment';
 import Immutable, {Map, List, OrderedMap} from 'immutable';
 
+import { readFileSync } from 'fs';
+import { join } from 'path';
+
+const htmlPath = join(__dirname, '../__markup__/element.html');
+const markup = readFileSync(htmlPath);
+
 describe('Matchers', function(){
+
+  beforeAll(()=>{
+    document.body.innerHTML = markup;
+  }); 
+
   describe('toBeElement', function(){
     test('Is html element', function(){
       let el = document.createElement('div');
@@ -11,6 +22,51 @@ describe('Matchers', function(){
     test('Is not html element', function(){
       expect('foo').not.toBeElement();
     });
+  });
+
+  describe('toHaveAttribute', () => {
+    test('should have attribute aria-hidden=false', () => {
+      let el = document.getElementById('some-id');
+      expect(el).toHaveAttribute('aria-hidden', 'false');
+    });
+
+    test('should not attribute aria-hidden=true', () => {
+      let el = document.getElementById('some-id');
+      expect(null).not.toHaveAttribute('aria-hidden', 'false');
+
+      expect(el).not.toHaveAttribute('aria-pressed', 'false');
+
+      expect(el).not.toHaveAttribute('aria-hidden', 'true');
+    });
+   
+  });
+
+  describe('toHaveTextContent', () => {
+    test('should have content', () => {
+      let el = document.getElementById('some-id');
+      expect(el).toHaveTextContent('link');
+    });
+
+    test('should not attribute aria-hidden=true', () => {
+      let el = document.getElementById('some-id');
+      expect(null).not.toHaveTextContent('link');
+      expect(el).not.toHaveTextContent('nothing');
+    });
+
+  });
+
+  describe('toHaveCssClass', () => {
+    test('should have css class', () => {
+      let el = document.getElementById('some-id');
+      expect(el).toHaveCssClass('some-class');
+    });
+
+    test('should not attribute aria-hidden=true', () => {
+      let el = document.getElementById('some-id');
+      expect(null).not.toHaveCssClass('some-class');
+      expect(el).not.toHaveCssClass('another-class');;
+    });
+
   });
 
   describe('matchObject', ()=>{

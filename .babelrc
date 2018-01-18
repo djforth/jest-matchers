@@ -1,21 +1,6 @@
 {
-  "presets": [
-    "es2015",
-    "es2016",
-    "es2017"
-  ],
+  "presets": [],
   "env": {
-    "production":{
-      "plugins": [
-        [
-          "lodash-modularize",
-          {
-              "lodashVersion": "4.17.4"
-          }
-        ]
-        , 'add-module-exports'
-      ]
-    },
     "test": {
       "plugins": [
         [
@@ -27,7 +12,41 @@
           }
         ],
         "rewire"
+      ],
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "browsers": [
+                "last 2 versions",
+                "chrome >= 55",
+                "IE >= 11"
+              ]
+            }
+          }
+        ]
       ]
     },
+    "production": {
+      "plugins": [
+        "lodash",
+        "add-module-exports"
+      ]
+      , "presets": [
+        ["env", {
+          modules: "umd",
+          "targets": {
+              'node': 4,
+              "browsers": [
+                "last 2 versions",
+                "chrome >= 55",
+                "IE >= 11"
+              ]
+            }
+        }]
+        , ["minify", {mangle:false}]
+      ]
+    }
   }
 }
