@@ -10,7 +10,7 @@ const makeMsg = msg => ({
 });
 
 export default {
-  toBeElement: CreateMatcher(actual => _.isElement(actual), makeMsg('boolean')),
+  toBeElement: CreateMatcher(actual => _.isElement(actual), makeMsg('Element')),
 
   toBeMoment: CreateMatcher(actual => moment.isMoment(actual), makeMsg('moment object')),
 
