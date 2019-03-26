@@ -6,46 +6,21 @@
         [
           "istanbul",
           {
-            "exclude": [
-              "**/*.spec.js"
-            ]
+            "exclude": ["**/*.test.js"]
           }
-        ],
-        "rewire"
+        ]
       ],
       "presets": [
         [
-          "env",
+          "@babel/env",
           {
             "targets": {
-              "browsers": [
-                "last 2 versions",
-                "chrome >= 55",
-                "IE >= 11"
-              ]
-            }
+              "browsers": [">0.25%", "IE >= 11", "not op_mini all"]
+            },
+            "useBuiltIns": "usage", // or "entry"
+            "corejs": 3
           }
         ]
-      ]
-    },
-    "production": {
-      "plugins": [
-        "lodash",
-        "add-module-exports"
-      ]
-      , "presets": [
-        ["env", {
-          modules: "umd",
-          "targets": {
-              'node': 4,
-              "browsers": [
-                "last 2 versions",
-                "chrome >= 55",
-                "IE >= 11"
-              ]
-            }
-        }]
-        , ["minify", {mangle:false}]
       ]
     }
   }

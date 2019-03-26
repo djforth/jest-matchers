@@ -1,24 +1,22 @@
 {
   "browser": true,
-  "collectCoverageFrom": ["<rootDir>/src/**/*.{js,jsx}"],
-  "coveragePathIgnorePatterns": ["<rootDir>/node_modules/", "<rootDir>/__tests__/", "<rootDir>/__tests__/__helpers__"],
-  "roots": [
-    "<rootDir>/__tests__/",
-    "<rootDir>/src/"
+  "rootDir": "./packages/",
+  "collectCoverageFrom": ["<rootDir>/**/*.{js,jsx}"],
+  "coverageDirectory": "<rootDir>/../",
+  "coveragePathIgnorePatterns": [],
+  "moduleNameMapper": {
+    "^@djforth/([a-zA-Z0-9_-]+)$": "<rootDir>/$1/"
+  },
+  "setupFilesAfterEnv": [
+    "<rootDir>/jest-matchers/index.js",
+    "<rootDir>/jest-moment-matchers/index.js",
+    "<rootDir>/jest-immutable-matchers/index.js"
   ],
-  "modulePaths": [
-    "<rootDir>/src/"
-  ],
-  "modulePathIgnorePatterns": [
-    "<rootDir>/lib/",
-    "<rootDir>/node_modules/"
-  ],
-  "setupTestFrameworkScriptFile": "./src",
-  "testPathIgnorePatterns": [
-    "<rootDir>/__tests__/__dummy__",
-    "<rootDir>/lib",
-    "<rootDir>/node_modules",
-    "<rootDir>/bower_components"
-  ],
-  "verbose": true
+  "transform": {
+    "^.+\\.jsx$": "babel-jest",
+    "^.+\\.js$": "babel-jest"
+  },
+  "testMatch": ["**/**/__tests__/*.js", "**/**/?(*.)+test.js"],
+  "verbose": true,
+  "testURL": "http://localhost/"
 }
