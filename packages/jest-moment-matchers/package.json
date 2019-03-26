@@ -1,6 +1,6 @@
 {
   "name": "@djforth/jest-moment-matchers",
-  "version": "1.0.0-0",
+  "version": "2.0.0-0",
   "description": "Jest matchers for Moment",
   "main": "index.js",
   "repository": "jest-moment-matchers",
@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@djforth/jest-matchers-core": "^1.0.0-0",
+    "@djforth/jest-matchers-core": "^2.0.0-0",
     "jest": "^24.5.0",
     "moment": "^2.24.0"
   }
