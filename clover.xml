@@ -1,40 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1553618849590" clover="3.2.0">
-  <project timestamp="1553618849591" name="All files">
-    <metrics statements="65" coveredstatements="61" conditionals="35" coveredconditionals="27" methods="17" coveredmethods="17" elements="117" coveredelements="105" complexity="0" loc="65" ncloc="65" packages="2" files="4" classes="4"/>
+<coverage generated="1553622520353" clover="3.2.0">
+  <project timestamp="1553622520354" name="All files">
+    <metrics statements="67" coveredstatements="63" conditionals="35" coveredconditionals="27" methods="17" coveredmethods="17" elements="119" coveredelements="107" complexity="0" loc="67" ncloc="67" packages="2" files="4" classes="4"/>
     <package name="jest-matchers-core">
-      <metrics statements="29" coveredstatements="26" conditionals="19" coveredconditionals="13" methods="8" coveredmethods="8"/>
+      <metrics statements="31" coveredstatements="28" conditionals="19" coveredconditionals="13" methods="8" coveredmethods="8"/>
       <file name="index.js" path="/Users/adrianstainforth/sites/modules/jest-matchers/packages/jest-matchers-core/index.js">
-        <metrics statements="29" coveredstatements="26" conditionals="19" coveredconditionals="13" methods="8" coveredmethods="8"/>
+        <metrics statements="31" coveredstatements="28" conditionals="19" coveredconditionals="13" methods="8" coveredmethods="8"/>
         <line num="1" count="74" type="stmt"/>
-        <line num="2" count="8" type="stmt"/>
-        <line num="3" count="8" type="cond" truecount="4" falsecount="0"/>
-        <line num="5" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="cond" truecount="4" falsecount="0"/>
+        <line num="5" count="6" type="cond" truecount="1" falsecount="1"/>
         <line num="6" count="0" type="stmt"/>
-        <line num="9" count="4" type="cond" truecount="2" falsecount="2"/>
+        <line num="9" count="6" type="cond" truecount="2" falsecount="2"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
         <line num="16" count="148" type="stmt"/>
         <line num="17" count="4" type="stmt"/>
-        <line num="18" count="4" type="cond" truecount="1" falsecount="1"/>
-        <line num="19" count="4" type="stmt"/>
-        <line num="22" count="4" type="cond" truecount="1" falsecount="1"/>
-        <line num="23" count="4" type="stmt"/>
-        <line num="26" count="4" type="cond" truecount="1" falsecount="1"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="30" count="4" type="stmt"/>
-        <line num="33" count="4" type="stmt"/>
-        <line num="34" count="74" type="stmt"/>
-        <line num="35" count="74" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="24" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="28" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
         <line num="36" count="74" type="stmt"/>
-        <line num="37" count="74" type="cond" truecount="1" falsecount="0"/>
-        <line num="41" count="55" type="stmt"/>
-        <line num="42" count="55" type="stmt"/>
-        <line num="43" count="55" type="cond" truecount="2" falsecount="0"/>
-        <line num="44" count="32" type="stmt"/>
-        <line num="46" count="23" type="stmt"/>
-        <line num="48" count="55" type="stmt"/>
-        <line num="52" count="20" type="stmt"/>
+        <line num="37" count="74" type="stmt"/>
+        <line num="38" count="74" type="stmt"/>
+        <line num="39" count="74" type="cond" truecount="1" falsecount="0"/>
+        <line num="43" count="55" type="stmt"/>
+        <line num="44" count="55" type="stmt"/>
+        <line num="45" count="55" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="32" type="stmt"/>
+        <line num="48" count="23" type="stmt"/>
+        <line num="50" count="55" type="stmt"/>
+        <line num="54" count="20" type="stmt"/>
       </file>
     </package>
     <package name="jest-matchers.src">
