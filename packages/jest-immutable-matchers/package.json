@@ -1,6 +1,6 @@
 {
   "name": "@djforth/jest-immutable-matchers",
-  "version": "2.0.0-0",
+  "version": "2.1.0",
   "description": "Jest matchers for immutable JS",
   "main": "index.js",
   "repository": "https://github.com/djforth/jest-matchers",
@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@djforth/jest-matchers-core": "^2.0.0-0",
+    "@djforth/jest-matchers-core": "^2.1.0",
     "immutable": "^3.8.2",
     "jest": "^24.5.0"
   }
