@@ -1,6 +1,6 @@
 {
   "name": "@djforth/jest-matchers-core",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "helpers to create jest matchers",
   "main": "index.js",
   "repository": "https://github.com/djforth/jest-matchers",
