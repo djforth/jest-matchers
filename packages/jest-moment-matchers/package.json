@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@djforth/jest-matchers-core": "^2.1.0",
+    "@djforth/jest-matchers-core": "^2.2.0",
     "@djforth/utilities": "^1.0.1",
     "jest": "^24.9.0",
     "moment": "^2.24.0"
