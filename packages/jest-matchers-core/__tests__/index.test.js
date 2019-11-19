@@ -7,7 +7,7 @@ describe('CreateMatcher', function() {
     beforeAll(() => {
       matcher = CreateMatcher((actual, expected) => actual === expected, {
         fail: 'Expected :actual to equal :expected',
-        succ: ':actual equalled :expected',
+        succ: ':actual equalled :expected'
       });
     });
 
@@ -18,7 +18,6 @@ describe('CreateMatcher', function() {
     describe('if success', function() {
       beforeAll(() => {
         result = matcher(1, 1);
-        console.log('huh', result);
       });
 
       test('should set pass to true', function() {
@@ -55,10 +54,13 @@ describe('CreateMatcher', function() {
 
   describe('If object', function() {
     beforeAll(() => {
-      matcher = CreateMatcher((actual, expected) => actual.foo === expected.foo, {
-        fail: 'Expected :actual to equal :expected',
-        succ: ':actual equalled :expected',
-      });
+      matcher = CreateMatcher(
+        (actual, expected) => actual.foo === expected.foo,
+        {
+          fail: 'Expected :actual to equal :expected',
+          succ: ':actual equalled :expected'
+        }
+      );
     });
 
     test('should return a function', function() {
@@ -97,7 +99,9 @@ describe('CreateMatcher', function() {
       test('should set message', function() {
         expect(result).hasKey('message');
         expect(result.message).toBeFunction();
-        expect(result.message()).toEqual('Expected {"foo":1} to equal {"foo":2}');
+        expect(result.message()).toEqual(
+          'Expected {"foo":1} to equal {"foo":2}'
+        );
       });
     });
   });

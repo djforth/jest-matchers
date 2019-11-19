@@ -23,6 +23,7 @@ describe('Matchers', function() {
   describe('toHaveAttribute', () => {
     test('should have attribute aria-hidden=false', () => {
       const el = document.getElementById('some-id');
+      expect(el).toHaveAttribute('aria-hidden');
       expect(el).toHaveAttribute('aria-hidden', 'false');
     });
 
@@ -33,6 +34,11 @@ describe('Matchers', function() {
       expect(el).not.toHaveAttribute('aria-pressed', 'false');
 
       expect(el).not.toHaveAttribute('aria-hidden', 'true');
+    });
+
+    test('should not attribute data-test=true', () => {
+      const el = document.getElementById('some-id');
+      expect(el).not.toHaveAttribute('data-test', 'false');
     });
   });
 

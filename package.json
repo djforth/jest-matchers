@@ -6,17 +6,19 @@
   "author": "Adrian Stainforth <adrian.stainforth@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@djforth/utilities": "^1.0.1",
+    "babel-jest": "^24.9.0",
     "jest-babel": "^1.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/preset-env": "^7.4.2",
-    "core-js": "3.0.0",
-    "eslint-config-morsedigital-prettier": "^2.1.0",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "core-js": "3.4.1",
+    "eslint-config-morsedigital-prettier": "^2.3.0",
     "immutable": "^3.8.2",
-    "jest": "^24.5.0",
-    "jasmine-expect": "^4.0.1",
-    "lerna": "^3.13.1",
+    "jest": "^24.9.0",
+    "jasmine-expect": "^4.0.3",
+    "lerna": "^3.18.4",
     "moment": "^2.24.0"
   },
   "scripts": {
