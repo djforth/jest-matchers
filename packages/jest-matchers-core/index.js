@@ -15,9 +15,7 @@ const convertExpected = converter => expected => {
 
 const CreateMsg = (msgBase, converter) => (actual, expected, attrs) => () => {
   let msg = msgBase;
-  console.log('expected', /:expected/.test(msg));
   if (/:expected/.test(msg)) {
-    console.log('eh?', converter(expected));
     msg = msg.replace(/:expected/, converter(expected));
   }
 
@@ -53,5 +51,5 @@ exports.CreateMatcher = (check, { succ, fail }, converter) => {
 
 exports.MakeMsg = msg => ({
   fail: `Expected :actual to be a ${msg}`,
-  succ: `Is a ${msg}`,
+  succ: `Is a ${msg}`
 });
