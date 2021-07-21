@@ -1,6 +1,6 @@
 {
   "name": "@djforth/jest-moment-matchers",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "description": "Jest matchers for Moment",
   "main": "index.js",
   "repository": "jest-moment-matchers",

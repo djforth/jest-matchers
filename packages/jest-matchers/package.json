@@ -1,6 +1,6 @@
 {
   "name": "@djforth/jest-matchers",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "description": "A collection of jest matchers ",
   "main": "index.js",
   "repository": "https://github.com/djforth/jest-matchers",
