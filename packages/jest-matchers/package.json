@@ -1,6 +1,6 @@
 {
   "name": "@djforth/jest-matchers",
-  "version": "2.3.0",
+  "version": "2.2.1",
   "description": "A collection of jest matchers ",
   "main": "index.js",
   "repository": "https://github.com/djforth/jest-matchers",
@@ -9,9 +9,9 @@
   "private": false,
   "dependencies": {
     "@djforth/jest-matchers-core": "^2.2.1",
-    "@djforth/utilities": "^1.0.1",
-    "jasmine-expect": "^4.0.1",
-    "jest": "^24.5.0",
-    "lodash": "^4.17.11"
+    "@djforth/utilities": "^1.1.0",
+    "jasmine-expect": "^5.0.0",
+    "jest": "^27.0.6",
+    "lodash": "^4.17.21"
   }
 }

@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@djforth/utilities": "^1.0.1",
-    "jest": "^24.9.0"
+    "@djforth/utilities": "^1.1.0",
+    "jest": "^27.0.6"
   }
 }
