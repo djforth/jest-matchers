@@ -1,6 +1,6 @@
 {
   "name": "@djforth/jest-matchers-core",
-  "version": "2.1.0",
+  "version": "2.4.0",
   "description": "helpers to create jest matchers",
   "main": "index.js",
   "repository": "https://github.com/djforth/jest-matchers",
@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "jest": "^24.8.0"
+    "@djforth/utilities": "^1.1.0",
+    "jest": "^27.0.6"
   }
 }
